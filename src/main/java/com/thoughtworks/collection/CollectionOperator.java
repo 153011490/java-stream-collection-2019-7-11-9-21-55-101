@@ -8,7 +8,17 @@ import java.util.List;
 
 public class CollectionOperator {
     public List<Integer> getListByInterval(int left, int right) {
-        throw new NotImplementedException();
+        List<Integer> arrayList=new ArrayList<>();
+        if(left<=right){
+            for(int i=left;i<=right;i++){
+                arrayList.add(i);
+            }
+        }else{
+            for(int i=left;i>=right;i--){
+                arrayList.add(i);
+            }
+        }
+        return arrayList;
     }
 
     public List<Integer> getEvenListByIntervals(int left, int right) {
