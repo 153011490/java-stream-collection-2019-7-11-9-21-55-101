@@ -30,7 +30,7 @@ public class MyMap {
     }
 
     public List<Integer> sortFromBig() {
-        throw new NotImplementedException();
+        return this.array.stream().sorted((a,b)->b-a).collect(Collectors.toList());
     }
 
     public List<Integer> sortFromSmall() {
