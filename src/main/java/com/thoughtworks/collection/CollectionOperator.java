@@ -2,6 +2,8 @@ package com.thoughtworks.collection;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CollectionOperator {
@@ -18,7 +20,7 @@ public class CollectionOperator {
     }
 
     public int popLastElment(int[] array) {
-        throw new NotImplementedException();
+        return array[array.length-1];
     }
 
     public List<Integer> popCommonElement(int[] firstArray, int[] secondArray) {
